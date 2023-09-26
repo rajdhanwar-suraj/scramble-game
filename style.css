@@ -1,0 +1,140 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the header */
+header {
+    width: 100%;
+    line-height: 15vh;
+    background-color: #20bf6b;
+}
+
+/* Styling for the main heading */
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    letter-spacing: 8px;
+    text-shadow: 0 1px 0 #efefef,
+        0 2px 0 #efefef,
+        0 3px 0 #efefef,
+        0 4px 0 #efefef,
+        0 25px 5px rgba(0, 0, 0, .1);
+}
+
+/* Styling for sections of the page */
+.section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7bed9f;
+}
+
+/* Styling for the footer */
+footer {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f3542;
+    color: white;
+    font-weight: 600;
+}
+
+/* Styling for the game area */
+.gameArea {
+    width: 60%;
+    height: 400px;
+    padding: 20px 0;
+    background-color: #2ed573;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 12px 10px 20px -6px black;
+}
+
+/* Styling for subheading in the game area */
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Styling for input elements */
+input {
+    width: 40%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #dff9fd;
+    color: black;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+}
+
+/* Styling for buttons */
+button {
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: #2f3542;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #eb4d4b;
+}
+
+/* Styling for specific buttons with class "btn" */
+button.btn {
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: white;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+/* Hover effect for buttons */
+button.btn:hover,
+button.btn:focus,
+button.btn:active {
+    letter-spacing: 0.125rem;
+    word-spacing: 0.2rem;
+}
+
+/* CSS class to hide elements */
+.hidden {
+    display: none;
+}
+
+/* Media query for screens with a max width of 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+
+    /* Adjusting the width of the game area and input elements */
+    .gameArea {
+        width: 80%;
+    }
+
+    input {
+        width: 60%;
+    }
+}
+
+/* Media query for screens with a max width of 450px */
+@media (max-width: 450px) {
+    /* Adjusting the line height of the header */
+    header {
+        line-height: 8vh;
+    }
+}
